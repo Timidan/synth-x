@@ -128,7 +128,7 @@ function createClients(params: { rpcUrl: string; privateKey: `0x${string}` }): {
 }
 
 // ERC-8004 registry is on Base Mainnet — use separate mainnet clients for attestation
-const BASE_MAINNET_RPC = process.env.BASE_MAINNET_RPC_URL ?? "https://base-mainnet.g.alchemy.com/v2/3e0LUdfzjxrlrIc5WfSE5EEdnMVdx29m";
+const BASE_MAINNET_RPC = process.env.BASE_MAINNET_RPC_URL ?? "https://mainnet.base.org";
 
 function createMainnetClients(params: { privateKey: `0x${string}` }): {
   publicClient: PublicClient;
